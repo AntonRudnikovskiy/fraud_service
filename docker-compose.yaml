@@ -1,6 +1,6 @@
 version: '3'
 services:
-  master_postgres:
+  postgres:
     image: postgres:13.3
     environment:
       - POSTGRES_USER=user
@@ -8,11 +8,7 @@ services:
       - POSTGRES_DB=postgres
     ports:
       - '5433:5433'
-  master_redis:
-    image: redis/redis-stack:latest
-    ports:
-      - "6380:6380"
-  master_kafka:
+  kafka:
     image: confluentinc/cp-kafka
     environment:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181

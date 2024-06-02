@@ -1,10 +1,10 @@
-package meetnbot.message_service;
+package sentinelguard.fraud_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MessageServiceApplicationTests {
+class FraudServiceApplicationTests {
 
     @Test
     void contextLoads() {
