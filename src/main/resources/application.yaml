@@ -20,11 +20,8 @@ spring:
         format_sql: true
         jdbc:
           batch_size: 10
-
-  kafka:
-    bootstrap-servers: localhost:9093
-    consumer:
-      group-id: group
+  rabbitmq:
+    addresses: localhost:5672
 
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.yaml
